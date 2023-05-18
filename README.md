@@ -57,8 +57,7 @@ curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json"
 
 Check contents of the MySQL database:
 
-docker compose -f docker-compose-jdbc.yaml exec mysql bash -c 'mysql -u $MYSQL_USER  -p$MYSQL_PASSWORD inventory -e "select * from customers"'
-
+docker compose -f docker-compose-jdbc.yaml exec mysql bash -c 'mysql -u $MYSQL_USER -p$MYSQL_PASSWORD inventory -e "select * from customers"'
 
 Verify that the PostgreSQL database has the same content:
 
